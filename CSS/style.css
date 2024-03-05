@@ -54,6 +54,10 @@ h3 {
   margin-block-end: 0em;
 }
 
+.jasmine-text{
+  color: var(--jasmine);
+}
+
 header {
   position: fixed;
   top: 0;
@@ -230,4 +234,139 @@ header .icons #menu-bars {
   }
 
 }
+
+
+/* --------------------------animating svgs---------------------------------- */
+
+
+/* @keyframes printer {
+  0% { 
+    transform: translateX(0);
+  }
+  25% { 
+    transform: translateX(100px);
+  }
+  50% { 
+    transform: translateX(0);
+  }
+  75% { 
+    transform: translateX(-100px);
+  }
+  100% { 
+    transform: translateX(0);
+  }
+
+}
+
+#arm{
+  animation: printer 2s linear infinite;
+}
+
+@keyframes text {
+  from { 
+    transform: rotateY(360deg);
+
+  }
+  to { 
+    transform: rotateY(0deg);
+
+  }
+
+}
+
+#text{
+  animation: text 2s linear infinite;
+  transform-origin: bottom;
+} */
+
+
+@-webkit-keyframes printer {
+  0% { 
+    -webkit-transform: translateX(0); 
+            transform: translateX(0);
+  }
+  25% { 
+    -webkit-transform: translateX(100px); 
+            transform: translateX(100px);
+  }
+  50% { 
+    -webkit-transform: translateX(0); 
+            transform: translateX(0);
+  }
+  75% { 
+    -webkit-transform: translateX(-100px); 
+            transform: translateX(-100px);
+  }
+  100% { 
+    -webkit-transform: translateX(0); 
+            transform: translateX(0);
+  }
+
+}
+
+@keyframes printer {
+  0% { 
+    -webkit-transform: translateX(0); 
+            transform: translateX(0);
+  }
+  25% { 
+    -webkit-transform: translateX(100px); 
+            transform: translateX(100px);
+  }
+  50% { 
+    -webkit-transform: translateX(0); 
+            transform: translateX(0);
+  }
+  75% { 
+    -webkit-transform: translateX(-100px); 
+            transform: translateX(-100px);
+  }
+  100% { 
+    -webkit-transform: translateX(0); 
+            transform: translateX(0);
+  }
+
+}
+
+#arm{
+  -webkit-animation: printer 2s linear infinite;
+          animation: printer 2s linear infinite; /* Animation name, duration, timing function */
+}
+
+@-webkit-keyframes text {
+  from { 
+    -webkit-transform: rotateY(360deg); 
+            transform: rotateY(360deg);
+
+  }
+  to { 
+    -webkit-transform: rotateY(0deg); 
+            transform: rotateY(0deg);
+
+  }
+
+}
+
+@keyframes text {
+  from { 
+    -webkit-transform: rotateY(360deg); 
+            transform: rotateY(360deg);
+
+  }
+  to { 
+    -webkit-transform: rotateY(0deg); 
+            transform: rotateY(0deg);
+
+  }
+
+}
+
+#text{
+  -webkit-animation: text 2s linear infinite;
+          animation: text 2s linear infinite; /* Animation name, duration, timing function */
+  -webkit-transform-origin: bottom;
+      -ms-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
 
